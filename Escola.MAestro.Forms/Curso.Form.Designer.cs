@@ -46,6 +46,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.Btn_Listar = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.Txt_Listar = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label2
@@ -151,6 +153,7 @@
             this.Btn_Remover.TabIndex = 1;
             this.Btn_Remover.Text = "Deletar";
             this.Btn_Remover.UseVisualStyleBackColor = false;
+            this.Btn_Remover.Click += new System.EventHandler(this.Btn_Remover_Click);
             // 
             // label5
             // 
@@ -189,6 +192,7 @@
             this.Btn_Alterar.TabIndex = 1;
             this.Btn_Alterar.Text = "Alterar";
             this.Btn_Alterar.UseVisualStyleBackColor = false;
+            this.Btn_Alterar.Click += new System.EventHandler(this.Btn_Alterar_Click);
             // 
             // label1
             // 
@@ -220,12 +224,30 @@
             this.Btn_Listar.TabIndex = 1;
             this.Btn_Listar.Text = "Listar";
             this.Btn_Listar.UseVisualStyleBackColor = false;
+            this.Btn_Listar.Click += new System.EventHandler(this.Btn_Listar_Click);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(2449, 132);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 23);
+            this.textBox1.TabIndex = 3;
+            // 
+            // Txt_Listar
+            // 
+            this.Txt_Listar.Location = new System.Drawing.Point(773, 191);
+            this.Txt_Listar.Multiline = true;
+            this.Txt_Listar.Name = "Txt_Listar";
+            this.Txt_Listar.Size = new System.Drawing.Size(338, 397);
+            this.Txt_Listar.TabIndex = 4;
             // 
             // Curso
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1123, 600);
+            this.Controls.Add(this.Txt_Listar);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.Btn_Listar);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label1);
@@ -270,5 +292,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button Btn_Listar;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox Txt_Listar;
     }
 }

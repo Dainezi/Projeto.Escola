@@ -48,6 +48,7 @@
             this.Btn_Listar = new System.Windows.Forms.Button();
             this.Txt_Curso = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
+            this.Txt_Listar = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -134,6 +135,7 @@
             this.Btn_Gravar.TabIndex = 1;
             this.Btn_Gravar.Text = "Gravar";
             this.Btn_Gravar.UseVisualStyleBackColor = false;
+            this.Btn_Gravar.Click += new System.EventHandler(this.Btn_Gravar_Click);
             // 
             // Btn_Deletar
             // 
@@ -145,6 +147,7 @@
             this.Btn_Deletar.TabIndex = 1;
             this.Btn_Deletar.Text = "Deletar";
             this.Btn_Deletar.UseVisualStyleBackColor = false;
+            this.Btn_Deletar.Click += new System.EventHandler(this.Btn_Deletar_Click);
             // 
             // label7
             // 
@@ -183,6 +186,7 @@
             this.Btn_Alterar.TabIndex = 1;
             this.Btn_Alterar.Text = "Alterar";
             this.Btn_Alterar.UseVisualStyleBackColor = false;
+            this.Btn_Alterar.Click += new System.EventHandler(this.Btn_Alterar_Click);
             // 
             // label9
             // 
@@ -221,6 +225,7 @@
             this.Btn_Listar.TabIndex = 1;
             this.Btn_Listar.Text = "Listar";
             this.Btn_Listar.UseVisualStyleBackColor = false;
+            this.Btn_Listar.Click += new System.EventHandler(this.Btn_Listar_Click);
             // 
             // Txt_Curso
             // 
@@ -239,11 +244,20 @@
             this.label11.TabIndex = 0;
             this.label11.Text = "Codigo do Curso";
             // 
+            // Txt_Listar
+            // 
+            this.Txt_Listar.Location = new System.Drawing.Point(784, 182);
+            this.Txt_Listar.Multiline = true;
+            this.Txt_Listar.Name = "Txt_Listar";
+            this.Txt_Listar.Size = new System.Drawing.Size(338, 442);
+            this.Txt_Listar.TabIndex = 3;
+            // 
             // Materia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1149, 645);
+            this.Controls.Add(this.Txt_Listar);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.Txt_Curso);
             this.Controls.Add(this.Btn_Listar);
@@ -293,5 +307,6 @@
         private System.Windows.Forms.Button Btn_Listar;
         private System.Windows.Forms.TextBox Txt_Curso;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TextBox Txt_Listar;
     }
 }
